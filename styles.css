@@ -1,19 +1,20 @@
 :root {
     --main-pink: #B9469F;
     --main-red: #B94665;
-    --main-purple: #791C98;
+    --main-purple: #56146B;
     --shadow-blue: #40E7E9;
 
 }
 
 * {
     box-sizing: border-box;
-    @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
-    background-color: var(--main-pink);
+    /*background-color: var(--main-pink);*/
+    
 }
 
 body {
     text-align: center;
+    background-image: linear-gradient(to right, var(--main-purple),var(--main-pink),var(--main-pink),var(--main-pink),var(--main-purple));
 }
 
 h1, h2 {
@@ -27,12 +28,22 @@ h1 {
 
 h2 {
     font-size: 2.5rem;
+    padding-top: 30px;
+}
+
+ul {
+    margin-bottom: 30px;
 }
 
 li {
     list-style-position: inside;
     text-align: center;
-    font-size: 1.35rem
+    font-size: 1.35rem;
+    font-family: 'Quicksand', sans-serif;
+}
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1rem;
 }
 
 img {
@@ -43,10 +54,27 @@ img {
     align-items: center;
     margin: 8px auto;
     border-style:ridge;
-    border-width: 10px;
+    border-width: 5px;
     border-radius: 12px;
     border-color: var(--main-red);
-    box-shadow: 4px 4px 0 var(--shadow-blue)
+    box-shadow: 3px 4px 0 var(--shadow-blue)
 
 
+}
+
+a {
+    margin-top: 30px;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    font-size: 1.35rem;
+}
+
+a:hover {
+    color: var(--shadow-blue);
+    text-shadow: 2px 2px 0 var(--main-purple);
+    text-decoration: underline;
+}
+
+footer {
+    padding: 30px 0 30px 0;
 }
