@@ -1,0 +1,52 @@
+:root {
+    --main-pink: #B9469F;
+    --main-red: #B94665;
+    --main-purple: #791C98;
+    --shadow-blue: #40E7E9;
+
+}
+
+* {
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+    background-color: var(--main-pink);
+}
+
+body {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Staatliches', cursive;
+    color: var(--main-purple);
+    text-shadow: 0 2px 0 var(--shadow-blue);
+}
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+li {
+    list-style-position: inside;
+    text-align: center;
+    font-size: 1.35rem
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 65vw;
+    align-items: center;
+    margin: 8px auto;
+    border-style:ridge;
+    border-width: 10px;
+    border-radius: 12px;
+    border-color: var(--main-red);
+    box-shadow: 4px 4px 0 var(--shadow-blue)
+
+
+}
